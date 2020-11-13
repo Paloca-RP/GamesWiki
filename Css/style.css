@@ -1,9 +1,10 @@
-ul {
+/*NAVBAR CONTENT*/
+.navbar {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    width: 25%;
-    background-color: #f1f1f1;
+    width: 15%;
+    background-color: #e8f800;
     position: fixed;
     height: 100%;
     overflow: auto;
@@ -12,7 +13,7 @@ ul {
   li a {
     display: block;
     color: #000;
-    padding: 8px 16px;
+    padding: 8px 30px;
     text-decoration: none;
   }
   
@@ -26,6 +27,36 @@ ul {
     color: white;
   }
 
+/*DROPDOWN NAVBAR*/
+
+.dropdown{
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content{
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 100px;
+  box-shadow: 0px 8px 16px 0px rgba(255, 0, 255, 0.2);
+  z-index: 5;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 30px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .droplist {background-color: #3e8e41;}/*Sobreposição de cor*/
+
+/*///////////////////////////////////////////////*/
 
 
 
@@ -36,18 +67,7 @@ ul {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+/*-----------------------------------------------*/
 footer {
     text-align: center;
     padding: 3px;
