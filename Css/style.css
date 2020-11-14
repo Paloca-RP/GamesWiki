@@ -1,10 +1,17 @@
+/*Global Things*/
+body{
+  background-color: #303030;
+  margin: 0;
+  padding: 0;
+  font-family: verdana;
+}
 /*NAVBAR CONTENT*/
 .navbar {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    width: 15%;
-    background-color: #e8f800;
+    width: 10%;
+    background-color: #4e4c4c;
     position: fixed;
     height: 100%;
     overflow: auto;
@@ -12,13 +19,13 @@
   
   li a {
     display: block;
-    color: #000;
+    color: #ddd;
     padding: 8px 30px;
     text-decoration: none;
   }
   
   li a.active {
-    background-color: #4CAF50;
+    background-color: #514c5a;
     color: white;
   }
   
@@ -31,15 +38,15 @@
 
 .dropdown{
   position: relative;
-  display: inline-block;
+  display: inline;
 }
 
 .dropdown-content{
   display: none;
-  position: absolute;
-  background-color: #f1f1f1;
+  position: relative;
+  background-color: #4e4c4c;
   min-width: 100px;
-  box-shadow: 0px 8px 16px 0px rgba(255, 0, 255, 0.2);
+  box-shadow: 1px 8px 16px 0px rgba(255, 0, 255, 0.2);
   z-index: 5;
 }
 
@@ -54,18 +61,13 @@
 
 .dropdown:hover .dropdown-content {display: block;}
 
-.dropdown:hover .droplist {background-color: #3e8e41;}/*Sobreposição de cor*/
+.dropdown:hover .droplist {background-color:#514c5a;}/*Sobreposição de cor*/
 
 /*///////////////////////////////////////////////*/
-
-
-
-
-
-
-
-
-
+.Titles{
+  text-align: center;
+  color: #ddd;
+}
 
 /*-----------------------------------------------*/
 footer {
