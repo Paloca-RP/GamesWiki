@@ -58,7 +58,6 @@ body{
 }
 
 .dropdown-content a {
-  color: #ddd;
   padding: 12px 30px;
   text-decoration: none;
   display: block;
@@ -85,14 +84,14 @@ footer {
   }
 
   .geral{
-    width: 900px;
+    width: 70%;
     text-align: center;
     color: #ddd;
     margin: 0 auto;
     font-family: Verdana;
   }
   .cabecalho{
-    height: 200px;
+    height: 25%;
   }
   .logo{
     float: left;
@@ -111,7 +110,7 @@ footer {
     margin-right: 10px;
   }
 
-
+/*informações */
   .corpo{
     position:relative;
     overflow:hidden;
@@ -148,4 +147,13 @@ footer {
   }
   .espacamento{
     padding:20px;
+  }
+
+
+  img{
+    transition: transform 0.4s ease-out;
+    transition-property: transform;
+    transition-duration: 0.4s;
+    transition-timing-function: ease-out;
+    transition-delay: 0s;
   }
