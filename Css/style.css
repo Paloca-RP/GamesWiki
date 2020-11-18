@@ -141,7 +141,7 @@ footer {
       position: absolute;
       top: 0;
       bottom: 0;
-    right:0;
+      right:0;
       z-index: -1;
       background: #2a2436;
   }
@@ -149,11 +149,6 @@ footer {
     padding:20px;
   }
 
-
-  img{
-    transition: transform 0.4s ease-out;
-    transition-property: transform;
-    transition-duration: 0.4s;
-    transition-timing-function: ease-out;
-    transition-delay: 0s;
-  }
+.arefhomepage{
+  color: #ddd;
+}
