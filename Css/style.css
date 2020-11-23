@@ -82,7 +82,7 @@ footer {
     background-color: DarkSalmon;
     color: white;
   }
-
+/*-----------------------------------------------*/
   .geral{
     width: 70%;
     text-align: center;
@@ -110,7 +110,7 @@ footer {
     margin-right: 10px;
   }
 
-/*informações */
+/*informações*/
   .corpo{
     position:relative;
     overflow:hidden;
@@ -134,7 +134,7 @@ footer {
     float:right;
   }
   .barra-lateral, .barra-lateral:before{
-    width:30%;
+    width: 30%;
   }
   .barra-lateral:before{
      content: '';
@@ -146,9 +146,65 @@ footer {
       background: #2a2436;
   }
   .espacamento{
-    padding:20px;
+    padding:30px;
   }
 
 .arefhomepage{
   color: #ddd;
+}
+
+/*Paginas de Jogos*/
+
+.artigos2{
+  float:left;
+}
+.artigos2, .artigos2:before{
+  width:30%;
+}
+.artigos2:before{
+  position:absolute;
+  top:0;
+  left:0;
+  bottom:0;
+  background:#2a2436;
+  z-index:-1;
+  content:'';
+}
+.barra-lateral2{
+  float:right;
+}
+.barra-lateral2, .barra-lateral2:before{
+  width: 60%;
+}
+.barra-lateral2:before{
+   content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right:0;
+    z-index: -1;
+    background: #2a2436;
+}
+.espacamento2{
+  padding:10px;
+}
+
+.arefhomepage{
+color: #ddd;
+}
+
+.barra-lateral3{
+  float: right;
+}
+.barra-lateral3, .barra-lateral3:before{
+  width: 100%;
+}
+.barra-lateral3:before{
+  content: '';
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   right:0;
+   z-index: -1;
+   background: #2a2436;
 }
