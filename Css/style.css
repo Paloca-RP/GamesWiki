@@ -208,3 +208,13 @@ color: #ddd;
    z-index: -1;
    background: #2a2436;
 }
+
+
+/*pagina A-Z*/
+.A_Zstyle{
+  text-align: center;
+}
+.ahref_line{
+  color: #ddd;
+  font-family: Arial;
+}
