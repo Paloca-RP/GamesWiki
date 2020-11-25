@@ -1,0 +1,220 @@
+/*Global Things*/
+body, html{
+  margin:  0; 
+	padding: 0;
+	font-size:18px;
+}
+
+body{
+  background-color: #181A1B;
+  margin: 0;
+  padding: 0;
+  font-family: verdana;
+  text-align: center;
+}
+/*NAVBAR CONTENT*/
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 10%;
+    background-color: #2a2436;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+  }
+  
+  li a {
+    display: block;
+    color: #ddd;
+    padding: 8px 30px;
+    text-decoration: none;
+  }
+  
+  li a.active {
+    background-color: #514c5a;
+    color: white;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+  }
+
+/*DROPDOWN NAVBAR*/
+
+.dropdown{
+  position: relative;
+  display: inline;
+}
+
+.dropdown-content{
+  display: none;
+  position: relative;
+  background-color: #181A1B;
+  min-width: 100px;
+  box-shadow: 1px 8px 16px 0px rgba(255, 0, 255, 0.2);
+  z-index: 5;
+}
+
+.dropdown-content a {
+  padding: 12px 30px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .droplist {background-color:#514c5a;}/*Sobreposição de cor*/
+
+/*///////////////////////////////////////////////*/
+.Titles{
+  text-align: center;
+  color: #ddd;
+}
+
+/*-----------------------------------------------*/
+footer {
+    text-align: center;
+    padding: 3px;
+    background-color: DarkSalmon;
+    color: white;
+  }
+/*-----------------------------------------------*/
+  .geral{
+    width: 70%;
+    text-align: center;
+    color: #ddd;
+    margin: 0 auto;
+    font-family: Verdana;
+  }
+  .cabecalho{
+    height: 25%;
+  }
+  .logo{
+    float: left;
+  }
+  .logo a{
+    font-size:50px;
+    font-style:bold;
+    text-decoration:none;
+    color:rgb(255, 0, 0);
+    display:block;
+    padding:10px 350px 0 0;
+  }
+  .search{
+    float: right;
+    margin-top: 40px;
+    margin-right: 10px;
+  }
+
+/*informações*/
+  .corpo{
+    position:relative;
+    overflow:hidden;
+  }
+  .artigos{
+    float:left;
+  }
+  .artigos, .artigos:before{
+    width:70%;
+  }
+  .artigos:before{
+    position:absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    background:#2a2436;
+    z-index:-1;
+    content:'';
+  }
+  .barra-lateral{
+    float:right;
+  }
+  .barra-lateral, .barra-lateral:before{
+    width: 30%;
+  }
+  .barra-lateral:before{
+     content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right:0;
+      z-index: -1;
+      background: #2a2436;
+  }
+  .espacamento{
+    padding:30px;
+  }
+
+.arefhomepage{
+  color: #ddd;
+}
+
+/*Paginas de Jogos*/
+
+.artigos2{
+  float:left;
+}
+.artigos2, .artigos2:before{
+  width:30%;
+}
+.artigos2:before{
+  position:absolute;
+  top:0;
+  left:0;
+  bottom:0;
+  background:#2a2436;
+  z-index:-1;
+  content:'';
+}
+.barra-lateral2{
+  float:right;
+}
+.barra-lateral2, .barra-lateral2:before{
+  width: 60%;
+}
+.barra-lateral2:before{
+   content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right:0;
+    z-index: -1;
+    background: #2a2436;
+}
+.espacamento2{
+  padding:10px;
+}
+
+.arefhomepage{
+color: #ddd;
+}
+
+.barra-lateral3{
+  float: right;
+}
+.barra-lateral3, .barra-lateral3:before{
+  width: 100%;
+}
+.barra-lateral3:before{
+  content: '';
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   right:0;
+   z-index: -1;
+   background: #2a2436;
+}
+
+
+/*pagina A-Z*/
+.A_Zstyle{
+  text-align: center;
+}
+.ahref_line{
+  color: #ddd;
+  font-family: Arial;
+}
