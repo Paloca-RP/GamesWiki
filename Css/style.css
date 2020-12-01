@@ -2,14 +2,15 @@
 body, html{
   margin:  0; 
 	padding: 0;
-	font-size:18px;
+  font-size:18px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 body{
   /*background-color: #181A1B;*/
   margin: 0;
   padding: 0;
-  font-family: verdana;
+  font-family: Arial, Helvetica, sans-serif;
   text-align: center;
   background: #212121;font-family: Androgyne;background-image: url('../images/img/s1.png'), url('../images/img/s2.png'), url('../images/img/s3.png');
               height: 100%;left: 0;position: absolute;top: 0;width: 100%;
@@ -40,6 +41,8 @@ body{
 }
 /*NAVBAR CONTENT*/
 .navbar {
+  
+    font-family: Arial, Helvetica, sans-serif;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -62,7 +65,7 @@ body{
     color: white;
   }
   
-  li a:hover:not(.active) {
+  li a:hover:not(.active) {/*Genero sobreposição*/
     background-color: #555;
     color: white;
   }
@@ -89,11 +92,11 @@ body{
   display: block;
 }
 
-.dropdown-content a:hover {background-color: #ddd;}
+.dropdown-content a:hover {background-color: #514c5a;}/*sobreposição de cor de tema genero*/
 
 .dropdown:hover .dropdown-content {display: block;}
 
-.dropdown:hover .droplist {background-color:#514c5a;}/*Sobreposição de cor*/
+.dropdown:hover .droplist {background-color:#514c5a;}/*Sobreposição de genro*/
 
 /*///////////////////////////////////////////////*/
 .Titles{
@@ -103,10 +106,19 @@ body{
 
 /*-----------------------------------------------*/
 footer {
-    text-align: center;
+    
+    /*text-align: center;
     padding: 3px;
     background-color: DarkSalmon;
-    color: white;
+    color: white;*/
+
+  border-top: 1px solid rgb(255, 255, 255);
+  background-color: DarkSalmon;
+  bottom: 0;
+  left: 0;
+  height: 40px;
+  position: fixed;
+  width: 100%;
   }
 /*-----------------------------------------------*/
   .geral{
@@ -175,7 +187,7 @@ footer {
     padding:30px;
   }
 
-.arefhomepage{
+.arefhomepage, a{
   color: #ddd;
 }
 
