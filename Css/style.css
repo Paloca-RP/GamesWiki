@@ -1,8 +1,8 @@
 /*Global Things*/
 body, html{
-  margin:  0; 
-	padding: 0;
-  font-size:18px;
+  margin:  1vw; 
+	padding: 2vw 5vw;
+  font-size:1.5vw;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -12,7 +12,6 @@ img{
 }
 
 body{
-  /*background-color: #181A1B;*/
   margin: 0;
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
@@ -28,7 +27,7 @@ body{
     -webkit-animation: snow 10s linear infinite;
     -moz-animation: snow 10s linear infinite;
     -ms-animation: snow 10s linear infinite;
-    animation: snow 10s linear infinite;
+    animation: rgb(251, 255, 250) 10s linear infinite;
 }
 
 @keyframes snow {
@@ -84,8 +83,7 @@ body{
     color: white;
   }
 
-/*DROPDOWN NAVBAR*/
-
+  /*DROPDOWN NAVBAR*/
 .dropdown{
   position: relative;
   display: inline;
@@ -105,7 +103,6 @@ body{
   text-decoration: none;
   display: block;
 }
-
 .dropdown-content a:hover {background-color: #514c5a;}/*sobreposição de cor de tema genero*/
 
 .dropdown:hover .dropdown-content {display: block;}
@@ -117,20 +114,15 @@ body{
   text-align: center;
   color: #ddd;
 }
-
 /*-----------------------------------------------*/
 footer {
-    
-    /*text-align: center;
-    padding: 3px;
-    background-color: DarkSalmon;
-    color: white;*/
   background-color: #2a2436;
   bottom: 0;
   left: 0;
   height: 3%;
   position: fixed;
   width: 100vw;
+  font-size: 1vw;
   }
 /*-----------------------------------------------*/
   .geral{
@@ -161,7 +153,7 @@ footer {
     margin-right: 1vw;
   }
 
-/*informações*/
+/*Index*/
   .corpo{
     position:relative;
     overflow:hidden;
