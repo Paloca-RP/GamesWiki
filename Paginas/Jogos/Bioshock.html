@@ -1,15 +1,17 @@
 <html lang="en">
+    <script type="text/javascript" src="../../JS/script.js"></script>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../Css/style.css">
+    <link rel="stylesheet" href="../../Css/style.css">    
+
     <title>Bioshock</title>
 </head>
-<body>
+<body  onload="mostrarLista()">
     <ul class = "navbar">
-        <br>    
+        <h3 style="color: #ddd;">Menu</h3>
          <li class="droplist">
-         <a href="../A_Z.html">A-Z</a>
+            <a href="../A_Z.html">A-Z</a>
          </li>
          <hr>
      <!--dropdown Genero-->
@@ -28,7 +30,6 @@
          <hr>
      </ul>
 
-
      <div class="geral">
         <div class="cabecalho">
             <div class="logo">
@@ -42,7 +43,7 @@
             <div class="artigos2">
                 <div class="espacamento">
                     <a href="https://store.steampowered.com/app/7670/BioShock/">
-                        <img src="../../images/BioShock.jpg" alt="something"><br>
+                        <img src="../../images/imagens_principais/BioShock.jpg" alt="something" onMouseOver="mouseEmCima(this)" onMouseOut="mouseFora(this)"><br>
                     </a>
                 </div>
             </div>  
@@ -65,7 +66,8 @@
                 </div>
             </div>
        </div> 
-        <br><br><br><br>
+    <br><br>
+
         <div class="corpo"> 
             <div class="barra-lateral3">
                 <div class="espacamento2">
@@ -77,5 +79,35 @@
                 </div>
             </div>
         </div>
+        <!--////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+        <br>
+        <hr>
+        <div class="labelcomentario">
+            <h4>Comments:</h4>
+        </div>
+        <hr>
+        <!--Insert Coments-->
+        <div class="corpo">
+                    <div class="barra-lateral4">
+                    <div class="espacamento3">
+                        <input id = "comments" type="text" placeholder="Comment" name = "comments"/><br>
+                        <span><button onclick="adicionarProducto(); mostrarultimo();">Inserir</button></span>
+                    </div>   <br>             
+                </div>
+        </div> 
+
+
+        <!--SHOW COMENTS-->
+        <br>
+        <div class="corpo">
+            <div class="barra-lateral4">
+                <div class="espacamento3">                    
+                    <div id="lista-comments">             
+                        
+                    </div>                         
+                </div>
+            </div>
+        </div>
+        <br>
 </body>
 </html>

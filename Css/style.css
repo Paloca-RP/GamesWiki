@@ -53,35 +53,35 @@ body{
 
 /*NAVBAR CONTENT*/
 .navbar {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 120%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 12vw;
+  background-image: linear-gradient( rgba(72, 53, 110, 0.5), rgba(42, 36, 54, 0.5));
+  position: fixed;
+  height:100%;
+  overflow: auto;
+}
   
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.5vw;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    width: 10vw;
-    background-color: #2a2436;
-    position: fixed;
-    height:100%;
-    overflow: auto;
-  }
-  
-  li a {
-    display: block;
-    color: #ddd;
-    padding: 1vw 1vw;
-    text-decoration: none;
-  }
-  
-  li a.active {
-    background-color: #514c5a;
-    color: white;
-  }
-  
-  li a:hover:not(.active) {/*Genero sobreposição*/
-    background-color: #555;
-    color: white;
-  }
+li a {
+  display: block;
+  color: #ddd;
+  padding: 5% 5%;
+  text-decoration: none;
+}
+
+li a.active {
+  background-color: #514c5a;
+  color: white;
+  padding: 5% 5%;
+}
+
+li a:hover:not(.active) {/*Genero sobreposição*/
+  background-color: #555;
+  color: white;
+}
 
   /*DROPDOWN NAVBAR*/
 .dropdown{
@@ -99,7 +99,7 @@ body{
 }
 
 .dropdown-content a {
-  padding: 12px 30px;
+  padding: 12% 30%;
   text-decoration: none;
   display: block;
 }
@@ -116,7 +116,7 @@ body{
 }
 /*-----------------------------------------------*/
 footer {
-  background-color: #2a2436;
+  background-image: linear-gradient( rgba(72, 53, 110, 0.5), rgba(42, 36, 54, 0.5));
   bottom: 0;
   left: 0;
   height: 3%;
@@ -124,81 +124,88 @@ footer {
   width: 100vw;
   font-size: 1vw;
   }
-/*-----------------------------------------------*/
-  .geral{
-    width: 60vw;
-    text-align: center;
-    color: #ddd;
-    margin: 1vw 23vw;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  .cabecalho{
-    height: 10vw;
-  }
-  .logo{
-    float: left;
-  }
-  .logo a{
-    font-size:3vw;
-    font-style:bold;
-    text-decoration:none;
-    color:rgb(255, 0, 0);
-    display: flex;
-    padding:1vw 15vw 0 0;
-  }
-  #serch{
-    float: left;
-    position: relative;
-    margin-top: 1vw;
-    margin-right: 1vw;
-  }
+/*---------------ALL pages--------------------------------*/
+.geral{
+  width: 60vw;
+  text-align: center;
+  color: #ddd;
+  margin: 1vw 23vw;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.cabecalho{
+  height: 10vw;
+}
+.logo{
+  float: left;
+}
+.logo a{
+  font-size:3vw;
+  font-style:bold;
+  text-decoration:none;
+  color:rgb(255, 0, 0);
+  display: flex;
+  padding:1vw 15vw 0 0;
+}
+.login-register{
+  float: right;
+  font-size: 1.2vw;
+}
 
-/*Index*/
-  .corpo{
-    position:relative;
-    overflow:hidden;
-  }
-  .artigos{
-    float:left;
-  }
-  .artigos, .artigos:before{
-    width:70%;
-  }
-  .artigos:before{
-    position:absolute;
-    top:0;
-    left:0;
-    bottom:0;
-    background:#2a2436;
-    z-index:-1;
-    content:'';
-  }
-  .barra-lateral{
-    float:right;
-    font-size: 1.3vw;
-    padding: 1vw 0;
-  }
-  .barra-lateral, .barra-lateral:before{
-    width: 30%;
-  }
-  .barra-lateral:before{
-      content: '';
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      right:0;
-      z-index: -1;
-      background: #2a2436;
-  }
-  .espacamento{
-    padding:1vw;
-  }
-
+/*##################Index##################*/
+/*corpo de generos*/
+.corpo2{
+  position:relative;
+  overflow:hidden;
+  width: 1000;
+    left: 300;
+}
+/*corpo do resto*/
+.corpo{
+  position:relative;
+  overflow:hidden;
+}
+.artigos{
+  float:left;
+}
+.artigos, .artigos:before{
+  width:70%;
+}
+.artigos:before{
+  position:absolute;
+  top:0;
+  left:0;
+  bottom:0;
+  background:#2a2436;
+  z-index:-1;
+  content:'';
+}
+.barra-lateral{
+  float:right;
+  font-size: 1.3vw;
+  padding: 1vw 0;
+}
+.barra-lateral, .barra-lateral:before{
+  width: 30%;
+}
+.barra-lateral:before{
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right:0;
+  z-index: -1;
+  background: #2a2436;
+}
+.espacamento{
+  padding:1vw;
+}
 .arefhomepage, a{
   color: #ddd;
 }
-
-/*Paginas de Jogos*/
+ .imagem{
+   width: 50%;
+ }
+/*##################Paginas de Jogos##################*/
 
 .artigos2{
   float:left;
@@ -223,23 +230,21 @@ footer {
   width: 60%;
 }
 .barra-lateral2:before{
-   content: '';
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right:0;
-    z-index: -1;
-    background: #2a2436;
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right:0;
+  z-index: -1;
+  background: #2a2436;
 }
 .espacamento2{
   padding:2vw;
   font-size: 1vw;
 }
-
 .arefhomepage{
 color: #ddd;
 }
-
 .barra-lateral3{
   float: right;
 }
@@ -255,19 +260,77 @@ color: #ddd;
   z-index: -1;
   background: #2a2436;
 }
+  /*/*##################COMENTÁRIOS##################*/
+.labelcomentario{
+  background-color: white;
+  color: black;
+  border-radius: 7vw;
+}
+/*insert comentário*/
+input[type = text]{
+  width: 30vw;
+  padding: 1vw 2vw;
+  margin: 0.5vw 0;
+  box-sizing: border-box;
+  border: 1px solid #555;
+  outline: none;
+}
+textarea {
+  width: 70%;
+  height: 12vw;
+  padding: 2vw 3vw;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  font-size: 16px;
+  resize: none;
+}
 
-/*pagina A-Z*/
+/*SHOW Comentario*/
+.barra-lateral4{/**/
+  align-content: center;
+}
+.barra-lateral4, .barra-lateral4:before{/**/
+  width: 100%;
+  height: auto;
+}
+.barra-lateral4:before{/**/
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right:0;
+  z-index: -1;
+  background: #3f364f;
+}
+.corpo2{/* borda*/
+position: relative;;
+overflow:hidden;
+color: #ddd;
+}
+.espacamento3{
+padding: 2% 20% 0 10%;
+font-size: 1vw;
+}
+.imagem2{
+float: left;
+width: 10%;
+border-radius: 50%;
+}
+
+/*##################A-Z##################*/
 .A_Zstyle{
-  text-align: center;
+text-align: center;
 }
 .ahref_line{
-  color: #ddd;
-  font-family: Arial;
+color: #ddd;
+font-family: Arial;
 }
 /*Crossplay page*/
 
 #h1crossplay {
-  color: #ddd;
+color: #ddd;
 }
-
+/*##################Login/register##################*/
 
