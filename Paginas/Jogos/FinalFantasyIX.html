@@ -1,11 +1,12 @@
 <html lang="en">
+    <script type="text/javascript" src="../../JS/script.js"></script>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../Css/style.css">
     <title>Final Fantasy IX</title>
 </head>
-<body>
+<body onload="mostrarLista3()">
     <ul class = "navbar">
         <br>    
          <li class="droplist">
@@ -39,7 +40,7 @@
             <div class="artigos2">
                 <div class="espacamento">
                     <a href="https://store.steampowered.com/app/377840/FINAL_FANTASY_IX/">
-                        <img src="../../images/finalfantasyix.jpg" height="400px" width="300px" alt="something"><br>
+                        <img src="../../images/imagens_principais/finalfantasyix.jpg" height="400px" width="300px" alt="something" onMouseOver="mouseEmCima3(this)" onMouseOut="mouseFora3(this)"><br>
                     </a>
                 </div>
             </div>  
@@ -70,5 +71,35 @@
                 </div>
             </div>
         </div>
+        <!--////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+        <br>
+        <hr>
+        <div class="labelcomentario">
+            <h4>Comments:</h4>
+        </div>
+        <hr>
+        <!--Insert Coments-->
+        <div class="corpo">
+                    <div class="barra-lateral4">
+                    <div class="espacamento3">
+                        <input id = "comments" type="text" placeholder="Comment" name = "comments"/><br>
+                        <span><button onclick="adicionarProducto3(); mostrarultimo3();">Inserir</button></span>
+                    </div>   <br>             
+                </div>
+        </div> 
+
+
+        <!--SHOW COMENTS-->
+        <br>
+        <div class="corpo">
+            <div class="barra-lateral4">
+                <div class="espacamento3">                    
+                    <div id="lista-comments3">             
+                        
+                    </div>                         
+                </div>
+            </div>
+        </div>
+        <br>
 </body>
 </html>

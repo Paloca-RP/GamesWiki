@@ -1,11 +1,12 @@
 <html lang="en">
+    <script type="text/javascript" src="../../JS/script.js"></script>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../Css/style.css">
     <title>The Last  Of Us</title>
 </head>
-<body>
+<body onload="mostrarLista9()">
     <ul class = "navbar">
         <br>    
          <li class="droplist">
@@ -42,7 +43,7 @@
             <div class="artigos2">
                 <div class="espacamento">
                     <a href="https://store.playstation.com/en-us/product/UP9000-CUSA00552_00-THELASTOFUS00000">
-                        <img src="../../images/The_Last_of_Us.png" alt="something"><br>
+                        <img src="../../images/imagens_principais/The_Last_of_Us.png" alt="something" onMouseOver="mouseEmCima9(this)" onMouseOut="mouseFora9(this)"><br>
                     </a>
                 </div>
             </div>  
@@ -72,5 +73,35 @@
                 </div>
             </div>
         </div>
+        <!--////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+        <br>
+        <hr>
+        <div class="labelcomentario">
+            <h4>Comments:</h4>
+        </div>
+        <hr>
+        <!--Insert Coments-->
+        <div class="corpo">
+                    <div class="barra-lateral4">
+                    <div class="espacamento3">
+                        <input id = "comments" type="text" placeholder="Comment" name = "comments"/><br>
+                        <span><button onclick="adicionarProducto9(); mostrarultimo9();">Inserir</button></span>
+                    </div>   <br>             
+                </div>
+        </div> 
+
+
+        <!--SHOW COMENTS-->
+        <br>
+        <div class="corpo">
+            <div class="barra-lateral4">
+                <div class="espacamento3">                    
+                    <div id="lista-comments9">             
+                        
+                    </div>                         
+                </div>
+            </div>
+        </div>
+        <br>
 </body>
 </html>

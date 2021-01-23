@@ -1,11 +1,12 @@
 <html lang="en">
+    <script type="text/javascript" src="../../JS/script.js"></script>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../Css/style.css">
     <title>Little Big Planet</title>
 </head>
-<body>
+<body onload="mostrarLista5()">
     <ul class = "navbar">
         <br>    
          <li class="droplist">
@@ -42,7 +43,7 @@
             <div class="artigos2">
                 <div class="espacamento">
                     <a href="https://littlebigplanet.playstation.com">
-                        <img src="../../images/Little_Big_Planet.jpg" alt="something"><br>
+                        <img src="../../images/imagens_principais/Little_Big_Planet.jpg" alt="something" onMouseOver="mouseEmCima5(this)" onMouseOut="mouseFora5(this)"><br>
                     </a>
                 </div>
             </div>  
@@ -72,9 +73,39 @@
             <div class="barra-lateral3">
                 <div class="espacamento2">
                     <h4>Description</h4>
-                    <p>dkisdojnfdsnjjnkfsdjnfnsdjjni</p>
+                    <p></p>
                 </div>
             </div>
         </div>
+        <!--////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+        <br>
+        <hr>
+        <div class="labelcomentario">
+            <h4>Comments:</h4>
+        </div>
+        <hr>
+        <!--Insert Coments-->
+        <div class="corpo">
+                    <div class="barra-lateral4">
+                    <div class="espacamento3">
+                        <input id = "comments" type="text" placeholder="Comment" name = "comments"/><br>
+                        <span><button onclick="adicionarProducto5(); mostrarultimo5();">Inserir</button></span>
+                    </div>   <br>             
+                </div>
+        </div> 
+
+
+        <!--SHOW COMENTS-->
+        <br>
+        <div class="corpo">
+            <div class="barra-lateral4">
+                <div class="espacamento3">                    
+                    <div id="lista-comments5">             
+                        
+                    </div>                         
+                </div>
+            </div>
+        </div>
+        <br>
 </body>
 </html>
