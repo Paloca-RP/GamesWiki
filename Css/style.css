@@ -59,7 +59,7 @@ body{
   margin: 0;
   padding: 0;
   width: 12vw;
-  background-image: linear-gradient( rgba(72, 53, 110, 0.5), rgba(42, 36, 54, 0.5));
+  background:#2a2436;
   position: fixed;
   height:100%;
   overflow: auto;
@@ -94,7 +94,7 @@ li a:hover:not(.active) {/*Genero sobreposição*/
   position: relative;
   background-color: #202020;
   min-width: auto;
-  box-shadow: 1px 8px 16px 0px rgba(174, 0, 255, 0.2);
+  box-shadow: 1px 8px 16px 0px #2a2436;
   z-index: 1;
 }
 
@@ -116,7 +116,7 @@ li a:hover:not(.active) {/*Genero sobreposição*/
 }
 /*-----------------------------------------------*/
 footer {
-  background-image: linear-gradient( rgba(72, 53, 110, 0.5), rgba(42, 36, 54, 0.5));
+  background:#2a2436;
   bottom: 0;
   left: 0;
   height: 3%;
@@ -302,7 +302,7 @@ textarea {
   bottom: 0;
   right:0;
   z-index: -1;
-  background: #3f364f;
+  background:#2a2436;;
 }
 .corpo2{/* borda*/
 position: relative;;

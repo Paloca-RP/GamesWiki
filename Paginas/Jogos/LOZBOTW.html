@@ -1,11 +1,12 @@
 <html lang="en">
+    <script type="text/javascript" src="../../JS/script.js"></script>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../Css/style.css">
     <title>The Legend of Zelda: Breath of the Wild</title>
 </head>
-<body>
+<body onload="mostrarLista6()">
     <ul class = "navbar">
         <br>    
          <li class="droplist">
@@ -42,7 +43,7 @@
             <div class="artigos2">
                 <div class="espacamento">
                     <a href="https://www.zelda.com/breath-of-the-wild/">
-                        <img src="../../images/LOZBOTW.png" alt="something"><br>
+                        <img src="../../images/imagens_principais/LOZBOTW.png" alt="something" onMouseOver="mouseEmCima6(this)" onMouseOut="mouseFora6(this)"><br>
                     </a>
                 </div>
             </div>  
@@ -73,5 +74,35 @@
                 </div>
             </div>
         </div>
+        <!--////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+        <br>
+        <hr>
+        <div class="labelcomentario">
+            <h4>Comments:</h4>
+        </div>
+        <hr>
+        <!--Insert Coments-->
+        <div class="corpo">
+                    <div class="barra-lateral4">
+                    <div class="espacamento3">
+                        <input id = "comments" type="text" placeholder="Comment" name = "comments"/><br>
+                        <span><button onclick="adicionarProducto6(); mostrarultimo6();">Inserir</button></span>
+                    </div>   <br>             
+                </div>
+        </div> 
+
+
+        <!--SHOW COMENTS-->
+        <br>
+        <div class="corpo">
+            <div class="barra-lateral4">
+                <div class="espacamento3">                    
+                    <div id="lista-comments6">             
+                        
+                    </div>                         
+                </div>
+            </div>
+        </div>
+        <br>
 </body>
 </html>
