@@ -390,7 +390,7 @@ Para ao passar mudar a imagem o "N" é o numero da função */
     }
     //Rocket_league
     {
-        var lista8=["Since it got free and they changed the hit box of many cars they ruined the game the ranks arent the same as they used to be,u cant play alone because u will rage with your teamates because they dont know how to play", ""]
+        var lista8=["Since it got free and they changed the hit box of many cars they ruined the game the ranks arent the same as they used to be,u cant play alone because u will rage with your teamates because they dont know how to play"]
 
         function adicionarProducto8 (){
             var produto = document.getElementById("comments").value
@@ -468,11 +468,15 @@ Para ao passar mudar a imagem o "N" é o numero da função */
     }
 }
 /*#################_registar_################## */
+
+var utilizador = [""]
+
+
 function registar (event){
     var produto = document.getElementById("comments").value
     if(produto.length !== 0){
-        lista.push(produto)
-        document.getElementById("comments").value=""
+        utilizador.push(produto)
+        
         alert("comments add");
         
         event.preventDefault()
@@ -482,12 +486,11 @@ function registar (event){
 }
 
 function login(event){
-    var produto = document.getElementById("comments").value
-    if(produto.length !== 0){
-        lista.push(produto)
-        document.getElementById("comments").value=""
-        alert("comments add");
-        
+    var email = document.getElementById("email").value
+    var pass = document.getElementById("pass").value
+    if(email.length != 0 && pass.length != 0){
+        utilizador.push(utilizador)
+        alert("add")
         event.preventDefault()
     }
     else
