@@ -60,7 +60,7 @@ Para ao passar mudar a imagem o "N" é o numero da função */
     }
     //Rocket_league
     function mouseEmCima8(imagem) {
-        imagem.src="../../images/Trocar_IMG/rocket.jpg";
+        imagem.src="../../images/imagens_principais/rocket.jpg";
     }
     function mouseFora8(imagem) {  
         imagem.src="../../images/imagens_principais/rocketol.png"; 
