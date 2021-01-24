@@ -77,7 +77,8 @@ Para ao passar mudar a imagem o "N" é o numero da função */
 {    
     //Bioshock
     {
-        var lista=["mouse", "Disco Rigido", "monitor"]
+        var lista=["I dislike shooting games in general because i suck at it. However my favorite genre is horror, rpg and strategy. This game hits all the marks of my favorite genre without heavily relying on its shooter element. I love how you can decimate wave of splicers even with just adam skills. Its funny and i love the bees with its reference to Wicker Man. Very atmospheric and at times made me sneakily peak at corners to check for splicers. Some jumpscares but not heart attack inducing. Of course the story. Intriguing to say the least. Easily one of the best game i played.",
+       " If you like FPS with a bit of exploration and powers, classic gun arsenal and rich story, then this game is for you!"]
 
         function adicionarProducto (){
             var produto = document.getElementById("comments").value
@@ -116,7 +117,7 @@ Para ao passar mudar a imagem o "N" é o numero da função */
     }
     //CODMW2
     {
-        var lista1=["mouse", "Disco Rigido", "monitor"]
+        var lista1=["Game is so much fun and great even years after i love the spec ops missions. If you want to buy the game for the multplayer dont ist dying off"]
 
         function adicionarProducto (){
             var produto = document.getElementById("comments").value
@@ -155,7 +156,7 @@ Para ao passar mudar a imagem o "N" é o numero da função */
     }
     //CyberPunk
     {
-        var lista2=["mouse", "Disco Rigido", "monitor"]
+        var lista2=["bons gráficos, boa história, bom cenário, excelente jogabilidade"]
 
         function adicionarProducto2 (){
             var produto = document.getElementById("comments").value
@@ -194,7 +195,7 @@ Para ao passar mudar a imagem o "N" é o numero da função */
     }
     //finalfantasyix
     {
-        var lista3=["mouse", "Disco Rigido", "monitor"]
+        var lista3=["Preface: the review posted here was my thoughts without the use of Moguri Mod. Moguri Mod fixes all of the issues present and adds beautiful background and nice quality of life tools for completionists such as 100% steal rate. I highly rec. this game if you use Moguri Mod. If you do not plan on installing Moguri Mod, read my review. Shout out to the devs of the mod for finishing this poorly coded piece of ♥♥♥♥. Keep it 100.", "When I first played Final Fantasy IX it was Christmas of 2000. I remember being incredibly excited that year because my Mom got me follow up games to two of my favorite JRPGs, the franchise Final Fantasy and Chrono Trigger. That Christmas I received Final Fantasy IX and Chrono Cross. In retrospect the amount of disappointment I felt for those two games at the time was unprecedented. That is probably the most disappointed I have ever been by a Christmas as a youth, but I digress..."]
 
         function adicionarProducto3 (){
             var produto = document.getElementById("comments").value
@@ -233,7 +234,7 @@ Para ao passar mudar a imagem o "N" é o numero da função */
     }
     //GodofWar
     {
-        var lista4=["mouse", "Disco Rigido", "monitor"]
+        var lista4=["Grate game ever"]
 
         function adicionarProducto4 (){
             var produto = document.getElementById("comments").value
@@ -272,7 +273,7 @@ Para ao passar mudar a imagem o "N" é o numero da função */
     }
     //Little_Big_Planet
     {
-        var lista5=["mouse", "Disco Rigido", "monitor"]
+        var lista5=["Otimo Jogo"]
 
         function adicionarProducto5 (){
             var produto = document.getElementById("comments").value
@@ -311,7 +312,7 @@ Para ao passar mudar a imagem o "N" é o numero da função */
     }
     //LOZBOTW
     {
-        var lista6=["mouse", "Disco Rigido", "monitor"]
+        var lista6=["Otimo Jogo"]
 
         function adicionarProducto6 (){
             var produto = document.getElementById("comments").value
@@ -350,7 +351,7 @@ Para ao passar mudar a imagem o "N" é o numero da função */
     }
     //Red_Dead_Redemption
     {
-        var lista7=["mouse", "Disco Rigido", "monitor"]
+        var lista7=["After the long wait, finally Rockstar fans can play one of the finest games this generation. Red Dead Redemption 2, for those with the hardware capable of running it, is the best western gaming experience we could ever have hoped for.", "This low audio bug is ridiculous. Every time you launch the game it sets your windows volume for the game down to 24% so you have to manually tab out and adjust the volume slider back to 100. Seems to have started in December update. Since there's no online forum to complain i'm putting it in this review. I'll fix the review once the bug is fixed."]
 
         function adicionarProducto7 (){
             var produto = document.getElementById("comments").value
@@ -389,7 +390,7 @@ Para ao passar mudar a imagem o "N" é o numero da função */
     }
     //Rocket_league
     {
-        var lista8=["mouse", "Disco Rigido", "monitor"]
+        var lista8=["Since it got free and they changed the hit box of many cars they ruined the game the ranks arent the same as they used to be,u cant play alone because u will rage with your teamates because they dont know how to play", ""]
 
         function adicionarProducto8 (){
             var produto = document.getElementById("comments").value
@@ -428,7 +429,7 @@ Para ao passar mudar a imagem o "N" é o numero da função */
     }
     //the last of us
     {
-        var lista9=["mouse", "Disco Rigido", "monitor"]
+        var lista9=["Otimo Jogo"]
 
         function adicionarProducto9 (){
             var produto = document.getElementById("comments").value
@@ -468,6 +469,19 @@ Para ao passar mudar a imagem o "N" é o numero da função */
 }
 /*#################_registar_################## */
 function registar (event){
+    var produto = document.getElementById("comments").value
+    if(produto.length !== 0){
+        lista.push(produto)
+        document.getElementById("comments").value=""
+        alert("comments add");
+        
+        event.preventDefault()
+    }
+    else
+        alert("Insira um Produto")
+}
+
+function login(event){
     var produto = document.getElementById("comments").value
     if(produto.length !== 0){
         lista.push(produto)
