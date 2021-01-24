@@ -60,16 +60,16 @@ Para ao passar mudar a imagem o "N" é o numero da função */
     }
     //Rocket_league
     function mouseEmCima8(imagem) {
-        imagem.src="../../images/Trocar_IMG/rocket.jpg";
+        imagem.src="../../images/imagens_principais/rocket.jpg";
     }
     function mouseFora8(imagem) {  
-        imagem.src="../../images/Trocar_IMG/rocketol.png"; 
+        imagem.src="../../images/imagens_principais/rocketol.png"; 
     }
     //the last of us
-    function mouseEmCima8(imagem) {
+    function mouseEmCima9(imagem) {
         imagem.src="../../images/Trocar_IMG/The_Last_of_Us.png";
     }
-    function mouseFora8(imagem) {  
+    function mouseFora9(imagem) {  
         imagem.src="../../images/imagens_principais/The_Last_of_Us.png"; 
     }
 }
